@@ -2,4 +2,6 @@
 
 source ../runtest_func.sh
 
-t "2 2 2" "8"
+t "3 5 7" 10
+t "3 2 9" 6
+t "20 20 19" 0
