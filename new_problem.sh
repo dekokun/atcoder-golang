@@ -15,7 +15,7 @@ if [ "$branch" != "master" ]; then
 fi
 
 program_name="$1"
-cargo new "$program_name" --bin
+mkdir "$program_name"
 git checkout -b "$program_name"
 cp -pr template/main.go "$program_name"/
 cp -pr template/runtest "$program_name"/runtest
