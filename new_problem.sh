@@ -17,8 +17,7 @@ fi
 program_name="$1"
 cargo new "$program_name" --bin
 git checkout -b "$program_name"
-cp -pr template/src/main.rs "$program_name"/src
+cp -pr template/main.go "$program_name"/
 cp -pr template/runtest "$program_name"/runtest
-cp -pr template/rust-toolchain "$program_name"/rust-toolchain.bak
 git add "$program_name"
 git commit -m"$program_name initialize"
